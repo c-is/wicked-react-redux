@@ -1,0 +1,42 @@
+@import '../../css/_variables.css';
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  text-align: center;
+
+  &__inner {
+    max-width: 960px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 6.666rem;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__desc {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+
+    a {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.button-container {
+  width: 22rem;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}

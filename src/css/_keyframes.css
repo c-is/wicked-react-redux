@@ -1,0 +1,48 @@
+@keyframes dot {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoom {
+  0% { transform: scale(0.95); }
+  100% { transform: scale(1.05); }
+}
+
+@keyframes zoomOut {
+  from { transform: scale(0.95); }
+  to { transform: scale(20); }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes :local(blink) {
+  0% {
+    background-color: var(--colour-green);
+  }
+
+  50% {
+    background-color: var(--colour-red);
+  }
+
+  100% {
+    background-color: var(--colour-green);
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../css/_variables.css';
+
+.content {
+  width: 100% !important;
+  left: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.notfound {
+  width: 100%;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    font-size: 13.33rem;
+    line-height: 1;
+  }
+
+  &__subtitle {
+
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}

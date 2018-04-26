@@ -1,0 +1,14 @@
+{
+  "home": {
+    "js": "http://localhost:3000/dist/home.js?80969e24384de34e8695"
+  },
+  "main": {
+    "js": "http://localhost:3000/dist/main.2719697262fccfe8fe87.hot-update.js"
+  },
+  "notFound": {
+    "js": "http://localhost:3000/dist/notFound.js?a1e1d6aa19d678f45cac"
+  },
+  "vendors~notFound": {
+    "js": "http://localhost:3000/dist/vendors~notFound.js?b40866e108157653265e"
+  }
+}

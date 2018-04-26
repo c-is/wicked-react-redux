@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= config.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="<%= config.keywords %>" />
+    <meta property="article:author" content="<%= config.url %>" />
+    <meta property="article:publisher" content="<%= config.url %>" />
+    <meta property="og:title" content="<%= config.title %>" />
+    <meta property="og:site_name" content="<%= config.title %>"/>
+    <meta property="og:url" content="<%= config.url %>" />
+    <meta property="og:description" content="<%= config.description %>" />
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="<%= bundle %>"></script>
+    <%_ if (!debug && config.trackingID) { _%>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','<%= config.trackingID %>','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <%_ } _%>
+  </body>
+</html>

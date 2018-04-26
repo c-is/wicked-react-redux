@@ -1,0 +1,70 @@
+@import '../../css/_variables.css';
+
+.layout {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &--loader {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    z-index: 999;
+
+    &__inner {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: var(--content-space);
+      right: var(--content-space);
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  padding-left: 0;
+  text-align: center;
+  background-color: var(--colour-main);
+  color: #fff;
+
+  a { color: #fff; }
+
+  &__logo {
+    height: 100%;
+    text-align: center;
+    padding: 0.466rem 0.6rem 0.266rem;
+  }
+
+  &__link {
+    height: 28px;
+    color: #fff;
+    vertical-align: middle;
+  }
+
+  &__user {
+    margin-left: 1.4rem;
+    vertical-align: middle;
+  }
+}
+
+.logo { height: 100%; }
+.footer { position: relative; }
+
+@media only screen and (max-width: 768px) {
+  .layout {
+    width: 100%;
+    padding-right: 0;
+  }
+}

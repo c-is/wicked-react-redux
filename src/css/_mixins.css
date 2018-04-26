@@ -1,0 +1,36 @@
+:root {
+  --flex-layout: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  };
+
+  --vertical-flex-layout: {
+    @apply --flex-layout;
+
+    flex-direction: column;
+  };
+
+  --horizontal-flex-layout: {
+    @apply --flex-layout;
+
+    flex-direction: row;
+  };
+
+  --fit: {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  };
+
+  --head-text: {
+    padding-bottom: 0.4rem;
+    color: var(--colour-font);
+    font-weight: 900;
+    font-size: 0.7rem;
+    text-align: left;
+    text-transform: uppercase;
+  };
+}

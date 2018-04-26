@@ -1,0 +1,37 @@
+@define-mixin breakpoint $point {
+  @if $point == phone {
+    @media (max-width: var(--screen-xs-min)) { @mixin-content; }
+  }
+
+  @else if $point == tablet {
+    @media (min-width: var(--screen-sm-min)) { @mixin-content; }
+  }
+
+  @else if $point == tablet-only {
+    @media (min-width: var(--screen-sm-min)) and (max-width: var(--screen-md-min) - 1px) { @mixin-content; }
+  }
+
+  @else if $point == desktop {
+    @media (min-width: var(--screen-md-min)) { @mixin-content; }
+  }
+
+  @else if $point == desktop-large {
+    @media (min-width: var(--screen-mc-min)) { @mixin-content; }
+  }
+
+  @else if $point == hd {
+    @media (min-width: var(--screen-lg-min)) { @mixin-content; }
+  }
+
+  @else if $point == not-desktop {
+    @media (max-width: calc(var(--screen-md-min) - 1px)) { @mixin-content; }
+  }
+
+  @else if $point == landscape {
+    @media (orientation: landscape) { @mixin-content; }
+  }
+
+  @else if $point == retina {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-width: var(--screen-md-min)) { @mixin-content; }
+  }
+}
