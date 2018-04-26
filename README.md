@@ -11,7 +11,7 @@
 * [flow](https://flow.org/)
 
 ### source
-[Source tree](./directoryList)
+[Source tree](./directoryList.md)
 
 ### commands
 ```
