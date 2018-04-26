@@ -1,4 +1,4 @@
-# Wicked Customer Feedback
+# Wicked React Redux
 
 ### tools/techniques
 * node v9.6.1
@@ -20,18 +20,18 @@ $ yarn install
 ```
 
 ```
-#Run the app with Browser Sync
+# Run the app with Browser Sync
 $ yarn start
 ```
 
 ```
-#Build
+# Build
 $ yarn build
 ```
 
 ### notes
 1. BEM and CSSModule are used for a CSS architecture
-#example
+
 ```css
 .header {
   position: relative;
